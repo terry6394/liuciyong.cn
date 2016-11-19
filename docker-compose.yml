@@ -1,0 +1,11 @@
+ghost:
+  image: ghost:0.11.2
+  volumes:
+    - "./data:/var/lib/ghost"
+  ports:
+    - "2368:2368"
+
+  restart: always
+
+nginx:
+  image: nginx:latest
